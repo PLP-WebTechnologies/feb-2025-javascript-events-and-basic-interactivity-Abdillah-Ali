@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Web Page</h1>
+
+    <h2>Event Handling</h2>
+    <button id="myButton">Click Me</button>
+    <p id="hoverText">Hover Over Me</p>
+    <input type="text" id="keypressInput" placeholder="Type Something">
+
+    <h2>Interactive Elements</h2>
+    <button id="changeTextButton">Change Text</button>
+    <p id="textToChange">Initial Text</p>
+
+    <h3>Image Gallery</h3>
+    <div id="imageGallery">
+        <img src="Images/image1.jpg" alt="Image 1">
+        <img src="Images/image2.jpg" alt="Image 2">
+        <img src="Images/image3.jpg" alt="Image 3">
+    </div>
+
+    <h3>Tabs</h3>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+    </div>
+
+    <div id="Tab1" class="tabcontent">
+        <p>Tab 1 content</p>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+        <p>Tab 2 content</p>
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+        <p>Tab 3 content</p>
+    </div>
+
+    <h2>Form Validation</h2>
+    <form id="myForm">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password (required, min 8 characters):</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
